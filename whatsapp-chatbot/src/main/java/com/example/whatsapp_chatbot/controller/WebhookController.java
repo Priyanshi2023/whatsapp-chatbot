@@ -32,4 +32,9 @@ public class WebhookController {
         }
         return new MessageResponse(reply);
     }
+
+    @GetMapping("/health")
+    public String healthCheck(){
+        return "WebHook is up and running";
+    }
 }
